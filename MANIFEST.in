@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include custom_ethika *.css
+recursive-include custom_ethika *.csv
+recursive-include custom_ethika *.html
+recursive-include custom_ethika *.ico
+recursive-include custom_ethika *.js
+recursive-include custom_ethika *.json
+recursive-include custom_ethika *.md
+recursive-include custom_ethika *.png
+recursive-include custom_ethika *.py
+recursive-include custom_ethika *.svg
+recursive-include custom_ethika *.txt
+recursive-exclude custom_ethika *.pyc
