@@ -1,0 +1,18 @@
+{
+ "action": "Create Entry",
+ "creation": "2021-10-16 17:30:40.852153",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2021-10-16 17:30:40.852153",
+ "modified_by": "Administrator",
+ "name": "Create Declaration Form",
+ "owner": "Administrator",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Create Declaration Form",
+ "validate_action": 1
+}

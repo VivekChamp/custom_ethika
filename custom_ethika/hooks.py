@@ -8,6 +8,7 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "vivek@myswish.in"
 app_license = "MIT"
+app_logo_url = "/assets/erpnext/images/erpnext-logo.svg"
 
 # Includes in <head>
 # ------------------
@@ -81,9 +82,9 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Salary Slip": "custom_ethika.custom.salary_slip.ERPNextSalarySlip"
+}
 
 # Document Events
 # ---------------

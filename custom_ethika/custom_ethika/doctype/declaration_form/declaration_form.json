@@ -1,0 +1,676 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2021-10-12 17:30:21.541418",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "image_view",
+  "applicable_tax_rates_under_new_section",
+  "sheme",
+  "tax_template",
+  "surcharge_new_tax_scheme_section",
+  "sur1",
+  "column_break_6",
+  "sur2",
+  "column_break_8",
+  "sur3",
+  "gg_column",
+  "sur4",
+  "surcharge_old_tax_scheme_section",
+  "sur5",
+  "column_break_14",
+  "sur6",
+  "column_break_16",
+  "sur7",
+  "column_break_18",
+  "sur8",
+  "employee_details_section",
+  "employee_code",
+  "name1",
+  "designation",
+  "column_break_5",
+  "pan",
+  "dob",
+  "tax_scheme_section",
+  "new_tax_scheme",
+  "column_break_10",
+  "old_tax_scheme",
+  "house_rent_allowance_section",
+  "amount",
+  "location_of_the_residence",
+  "name_of_the_landlord",
+  "rent_paid_to_the_landlord",
+  "address_of_the_landlord",
+  "column_break_17",
+  "pan_no",
+  "document",
+  "note",
+  "view_more",
+  "section_break_23",
+  "leave_travel_concessions_or_assistance",
+  "column_break_25",
+  "claims",
+  "a",
+  "claims_during",
+  "am",
+  "column_break_29",
+  "claims_during_the",
+  "amo",
+  "claims_during_the_year",
+  "amou",
+  "column_break_34",
+  "xxxx",
+  "interest_on_housing_loan_section",
+  "do_you_have_a_housing_loan",
+  "occupation_status_fo_the_house",
+  "column_break_39",
+  "interest_paid_on_housing_loan",
+  "date_of_loan_disbursement",
+  "name_of_the_lending_bank",
+  "bankers_certificate_to_be_submitted",
+  "rental_income",
+  "column_break_44",
+  "condition",
+  "dedution_80c_section",
+  "table_66",
+  "deduction_80d_section",
+  "medical_insurance_premium",
+  "if_any_person_insured_is_a_senior_citizen",
+  "column_break_69",
+  "preventive_health_check_up",
+  "column_break_71",
+  "medical_insurance_premium_parents",
+  "if_any_person_insured_is_a_senior_citizens",
+  "column_break_72",
+  "interest_for_loan_taken_for_higer_education",
+  "column_break_81",
+  "small_text_82",
+  "section_break_74",
+  "deduction_in_respect_of_interest_on_deposits_in_saving_account",
+  "income_from_previous_employment_section",
+  "income_after_exemptions",
+  "provident_fund_pf",
+  "column_break_78",
+  "professional_tax_pt",
+  "tax_deducted_at_source_tds",
+  "income_from_other_source_section",
+  "table_84",
+  "amended_from",
+  "section_break_86",
+  "youtube_links",
+  "youtube_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_code.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "employee_code.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_code.pan_number",
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_code.date_of_birth",
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tax_scheme_section",
+   "fieldtype": "Section Break",
+   "label": "Tax Scheme"
+  },
+  {
+   "default": "0",
+   "fieldname": "new_tax_scheme",
+   "fieldtype": "Check",
+   "label": "New Tax Scheme"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "old_tax_scheme",
+   "fieldtype": "Check",
+   "label": "Old Tax Scheme"
+  },
+  {
+   "fieldname": "house_rent_allowance_section",
+   "fieldtype": "Section Break",
+   "label": "House Rent Allowance"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "location_of_the_residence",
+   "fieldtype": "Data",
+   "label": "Location of the Residence"
+  },
+  {
+   "fieldname": "name_of_the_landlord",
+   "fieldtype": "Data",
+   "label": "Name of the Landlord"
+  },
+  {
+   "fieldname": "rent_paid_to_the_landlord",
+   "fieldtype": "Currency",
+   "label": "Rent paid to the Landlord"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_of_the_landlord",
+   "fieldtype": "Small Text",
+   "label": "Address of the Landlord"
+  },
+  {
+   "description": "(Of Landlord)",
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "PAN No / Adhar No"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "label": "Rent Receipt to be Submitted"
+  },
+  {
+   "default": "[Permanent Account Number or Aadhar Number] shall be furnished if the aggregate rent paid during the previous year exceeds One Lakh Rupees",
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note",
+   "options": "[Permanent Account Number or Aadhar Number] shall be furnished if the aggregate rent paid during the previous year exceeds One Lakh Rupees"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break",
+   "label": "LTA"
+  },
+  {
+   "fieldname": "leave_travel_concessions_or_assistance",
+   "fieldtype": "Select",
+   "label": "Leave Travel concessions or assistance",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.leave_travel_concessions_or_assistance == \"Yes\"",
+   "description": "Planning to claim LTA this year",
+   "fieldname": "claims",
+   "fieldtype": "Select",
+   "label": "Claims during the year 2018",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.leave_travel_concessions_or_assistance == \"Yes\"",
+   "description": "Planning to claim LTA this year",
+   "fieldname": "claims_during",
+   "fieldtype": "Select",
+   "label": "Claims during the year 2019",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.leave_travel_concessions_or_assistance == \"Yes\"",
+   "description": "Planning to claim LTA this year",
+   "fieldname": "claims_during_the",
+   "fieldtype": "Select",
+   "label": "Claims during the year 2020",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.leave_travel_concessions_or_assistance == \"Yes\"",
+   "description": "Planning to claim LTA this year",
+   "fieldname": "claims_during_the_year",
+   "fieldtype": "Select",
+   "label": "Claims during the year 2021",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.leave_travel_concessions_or_assistance == \"Yes\"",
+   "fieldname": "xxxx",
+   "fieldtype": "Select",
+   "label": "If bils are not provided properly company will consider the amount paid towards LTA for Tax Purpose",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.claims == \"Yes\"",
+   "fieldname": "a",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "depends_on": "eval:doc.claims_during == \"Yes\"",
+   "fieldname": "am",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "depends_on": "eval:doc.claims_during_the == \"Yes\"",
+   "fieldname": "amo",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "depends_on": "eval:doc.claims_during_the_year == \"Yes\"",
+   "fieldname": "amou",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interest_on_housing_loan_section",
+   "fieldtype": "Section Break",
+   "label": "Interest on Housing Loan (Deduction U/S 24)"
+  },
+  {
+   "fieldname": "do_you_have_a_housing_loan",
+   "fieldtype": "Select",
+   "label": "Do you have a Housing Loan?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.do_you_have_a_housing_loan == \"Yes\";",
+   "fieldname": "occupation_status_fo_the_house",
+   "fieldtype": "Select",
+   "label": "Occupation status fo the House?",
+   "options": "\nSelf Occupied\nRented Out"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.do_you_have_a_housing_loan == \"Yes\"",
+   "fieldname": "interest_paid_on_housing_loan",
+   "fieldtype": "Currency",
+   "label": "Interest paid on housing loan"
+  },
+  {
+   "depends_on": "eval:doc.do_you_have_a_housing_loan == \"Yes\"",
+   "fieldname": "date_of_loan_disbursement",
+   "fieldtype": "Date",
+   "label": "Date of Loan Disbursement"
+  },
+  {
+   "depends_on": "eval:doc.do_you_have_a_housing_loan == \"Yes\"",
+   "fieldname": "name_of_the_lending_bank",
+   "fieldtype": "Data",
+   "label": "Name of the Lending Bank"
+  },
+  {
+   "depends_on": "eval:doc.do_you_have_a_housing_loan == \"Yes\"",
+   "fieldname": "bankers_certificate_to_be_submitted",
+   "fieldtype": "Attach",
+   "label": "Bankers certificate to be submitted"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.do_you_have_a_housing_loan == \"Yes\"",
+   "fieldname": "rental_income",
+   "fieldtype": "Currency",
+   "label": "Rental Income"
+  },
+  {
+   "fieldname": "dedution_80c_section",
+   "fieldtype": "Section Break",
+   "label": "Dedution U/S 80C&80CCC(Max amount upto Rs 1,50,000/-)"
+  },
+  {
+   "fieldname": "deduction_80d_section",
+   "fieldtype": "Section Break",
+   "label": "Deduction U/S 80D"
+  },
+  {
+   "description": "(Max. Limit-Rs.25000/-)",
+   "fieldname": "medical_insurance_premium",
+   "fieldtype": "Data",
+   "label": "(A) Medical Insurance Premium-Self/Spouse/Children"
+  },
+  {
+   "description": "(Max. Limit-Rs.25000/-)",
+   "fieldname": "medical_insurance_premium_parents",
+   "fieldtype": "Data",
+   "label": "(C) Medical Insurance Premium-Parents"
+  },
+  {
+   "description": "Max. Rs.5,000/- <br>\n(Within overall limit of Rs.25,000/50,000 under A )",
+   "fieldname": "preventive_health_check_up",
+   "fieldtype": "Data",
+   "label": "(B) Preventive Health Check-Up                                                                    "
+  },
+  {
+   "description": "No Limit (Only Interest portion)",
+   "fieldname": "interest_for_loan_taken_for_higer_education",
+   "fieldtype": "Data",
+   "label": "Interest for Loan taken for Higher Education"
+  },
+  {
+   "description": "Max. Limit Rs.10,000/-",
+   "fieldname": "deduction_in_respect_of_interest_on_deposits_in_saving_account",
+   "fieldtype": "Data",
+   "label": "Deduction in respect of interest on deposits in saving account"
+  },
+  {
+   "fieldname": "column_break_69",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_72",
+   "fieldtype": "Section Break",
+   "label": "Deduction U/S 80 E"
+  },
+  {
+   "fieldname": "income_from_previous_employment_section",
+   "fieldtype": "Section Break",
+   "label": "Income from Previous Employment"
+  },
+  {
+   "fieldname": "income_after_exemptions",
+   "fieldtype": "Currency",
+   "label": "Income after exemptions"
+  },
+  {
+   "fieldname": "provident_fund_pf",
+   "fieldtype": "Currency",
+   "label": "Provident Fund (PF)"
+  },
+  {
+   "fieldname": "professional_tax_pt",
+   "fieldtype": "Currency",
+   "label": "Professional Tax (PT)"
+  },
+  {
+   "fieldname": "tax_deducted_at_source_tds",
+   "fieldtype": "Currency",
+   "label": "Tax Deducted At Source (TDS)"
+  },
+  {
+   "fieldname": "income_from_other_source_section",
+   "fieldtype": "Section Break",
+   "label": "Income From Other Source"
+  },
+  {
+   "fieldname": "column_break_78",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Applicable Tax Rates",
+   "fieldname": "sheme",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Sheme",
+   "options": "Ethika Tax Scheme",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "applicable_tax_rates_under_new_section",
+   "fieldtype": "Section Break",
+   "label": "Applicable Tax Rates under New & Old Scheme for the year 2021-2022"
+  },
+  {
+   "fieldname": "tax_template",
+   "fieldtype": "Table",
+   "label": "Tax Template",
+   "options": "Ethika Tax Template",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "surcharge_new_tax_scheme_section",
+   "fieldtype": "Section Break",
+   "label": "Surcharge New Tax Scheme"
+  },
+  {
+   "fetch_from": "sheme.1",
+   "fieldname": "sur1",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sheme.2",
+   "fieldname": "sur2",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sheme.3",
+   "fieldname": "sur3",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gg_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sheme.7",
+   "fieldname": "sur4",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "surcharge_old_tax_scheme_section",
+   "fieldtype": "Section Break",
+   "label": "Surcharge Old Tax Scheme"
+  },
+  {
+   "fetch_from": "sheme.4",
+   "fieldname": "sur5",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sheme.5",
+   "fieldname": "sur6",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sheme.6",
+   "fieldname": "sur7",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sheme.8",
+   "fieldname": "sur8",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "table_66",
+   "fieldtype": "Table",
+   "options": "Deduction 80C Item"
+  },
+  {
+   "bold": 1,
+   "fieldname": "section_break_74",
+   "fieldtype": "Section Break",
+   "label": "Deduction U/S 80 TTA"
+  },
+  {
+   "fieldname": "column_break_71",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "table_84",
+   "fieldtype": "Table",
+   "options": "Other Income Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Declaration Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "youtube_links",
+   "fieldtype": "Data",
+   "label": "Youtube"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "youtube_url",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_86",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "view_more",
+   "fieldtype": "Button",
+   "label": "View More"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Attach Image",
+   "label": "Image View"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "EIT.-###"
+  },
+  {
+   "default": "0",
+   "description": "(If age is more than 60Yrs then Max. Limit 50000/-)",
+   "fieldname": "if_any_person_insured_is_a_senior_citizen",
+   "fieldtype": "Check",
+   "label": "Is any insured persons age is more than 60Yrs ?"
+  },
+  {
+   "default": "0",
+   "description": "(If age is more than 60Yrs then Max. Limit 50000/-)",
+   "fieldname": "if_any_person_insured_is_a_senior_citizens",
+   "fieldtype": "Check",
+   "label": "Is any insured persons age is more than 60Yrs ?"
+  },
+  {
+   "default": "<u>Income Tax Benefit on Interest on Loan for Purchase/ Construction/ Repair/ Renewal/ Reconstruction of a Residential House Property</u>\n\n(A) If a property is rented out, all the interest on a home loan can be claimed. <br>\n(B) If the property is vacant or self-occupied, a maximum of 2,00,000 can be claimed. <br>\n(C) maximum of \u20b930,000 can be claimed if <br>\ni) The loan is taken before 1 April 1999 (OR).<br>\nii) The purchase or construction is not completed within five years after the end of the financial year in which the loan was taken.",
+   "depends_on": "eval:doc.do_you_have_a_housing_loan == \"Yes\"",
+   "fieldname": "condition",
+   "fieldtype": "HTML Editor",
+   "read_only": 1
+  },
+  {
+   "default": "The loan should be taken to pursue higher studies. The deduction allowed is the total interest part of the EMI paid during the financial year. There is no limit on the maximum amount that is allowed as deduction.\nThe deduction for the interest on loan is available only for 8 years starting from the year in which you start repaying the loan or until the interest is fully repaid whichever is earlier.\nNote: A certificate from your Bank is required",
+   "fieldname": "small_text_82",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_81",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "image_field": "image_view",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-10-20 18:16:03.126325",
+ "modified_by": "Administrator",
+ "module": "Custom Ethika",
+ "name": "Declaration Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

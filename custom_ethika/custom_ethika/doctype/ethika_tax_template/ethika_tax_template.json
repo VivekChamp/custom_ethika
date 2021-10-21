@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-10-13 12:42:41.899328",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "income_bracket_in_rs",
+  "new_tax_scheme",
+  "old_tax_scheme"
+ ],
+ "fields": [
+  {
+   "fieldname": "income_bracket_in_rs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Income Bracket In Rs"
+  },
+  {
+   "fieldname": "new_tax_scheme",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "New Tax Scheme"
+  },
+  {
+   "fieldname": "old_tax_scheme",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Old Tax Scheme"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-10-13 12:42:41.899328",
+ "modified_by": "Administrator",
+ "module": "Custom Ethika",
+ "name": "Ethika Tax Template",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

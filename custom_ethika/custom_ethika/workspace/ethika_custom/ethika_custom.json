@@ -1,0 +1,90 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-10-16 17:33:54.910167",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "tool",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Ethika Custom",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tax Declarations",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Declaration Form",
+   "link_to": "Declaration Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Ethika Tax Scheme",
+   "link_to": "Ethika Tax Scheme",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Deduction 80C Master",
+   "link_to": "Deduction 80C Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Other Income",
+   "link_to": "Other Income Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2021-10-16 17:54:38.730623",
+ "modified_by": "Administrator",
+ "module": "Custom Ethika",
+ "name": "Ethika Custom",
+ "onboarding": "Ethika Custom",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Declaration Form",
+   "link_to": "Declaration Form",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Ethika Tax Scheme",
+   "link_to": "Ethika Tax Scheme",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Other Income Master",
+   "link_to": "Other Income Master",
+   "type": "DocType"
+  }
+ ]
+}

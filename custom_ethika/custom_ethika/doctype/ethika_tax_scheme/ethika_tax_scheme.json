@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2021-10-13 12:43:45.110076",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "tax_template",
+  "surcharge_new_tax_scheme_section",
+  "1",
+  "column_break_5",
+  "2",
+  "column_break_7",
+  "3",
+  "column_break_9",
+  "7",
+  "surcharge_old_tax_scheme_section",
+  "4",
+  "column_break_11",
+  "5",
+  "column_break_13",
+  "6",
+  "column_break_17",
+  "8"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "tax_template",
+   "fieldtype": "Table",
+   "label": "Tax Template",
+   "options": "Ethika Tax Template"
+  },
+  {
+   "fieldname": "surcharge_new_tax_scheme_section",
+   "fieldtype": "Section Break",
+   "label": "Surcharge New Tax Scheme"
+  },
+  {
+   "fieldname": "1",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "2",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "3",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "surcharge_old_tax_scheme_section",
+   "fieldtype": "Section Break",
+   "label": "Surcharge Old Tax Scheme"
+  },
+  {
+   "fieldname": "4",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "5",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "6",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "8",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "7",
+   "fieldtype": "Small Text"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-10-13 13:29:05.068180",
+ "modified_by": "Administrator",
+ "module": "Custom Ethika",
+ "name": "Ethika Tax Scheme",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

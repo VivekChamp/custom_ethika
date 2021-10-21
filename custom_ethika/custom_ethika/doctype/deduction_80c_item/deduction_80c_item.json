@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-10-14 11:28:41.939720",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "amount",
+  "attachment",
+  "specify_reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "options": "\nLife Insurance (LIC)\nProvident Fund (PF)\nPublic Provident Fund (PPF)\nVoluntary Provident Fund (VPF)\nNational Savings Certificate (NSC)\nInterest accured on NSC (Re-invested)\nUnit Linked Insurance Policy (ULIP)\nEquity Linkded Savings Scheme (ELSS)-Mutual Fund\nPayment for Tuition Fees for Children (Max. 2 Children)\nPrincipal Repayment of Housing Loan\nStamp Duty, Registration charges incurred for Buying House (1st Year Only)\nInfrastructure Bonds\nBank Fixed Deposit For 5 Years & Above\nPost Office Term Deposit For 5 Years & Above\nSenior Citizen Savings Scheme\nSukanya Samriddhi Account Scheme\nContribution To Certain Pension Funds\nOthers"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attachment"
+  },
+  {
+   "depends_on": "eval:doc.item_name == \"Others\"",
+   "fieldname": "specify_reason",
+   "fieldtype": "Data",
+   "label": "Specify Reason"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-10-18 10:30:06.529840",
+ "modified_by": "Administrator",
+ "module": "Custom Ethika",
+ "name": "Deduction 80C Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

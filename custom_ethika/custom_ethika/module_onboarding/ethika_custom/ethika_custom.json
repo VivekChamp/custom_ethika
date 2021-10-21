@@ -1,0 +1,35 @@
+{
+ "allow_roles": [
+  {
+   "role": "All"
+  }
+ ],
+ "creation": "2021-10-16 17:30:42.757996",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "https://docs.erpnext.com/docs/user/manual/en",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2021-10-16 17:30:42.757996",
+ "modified_by": "Administrator",
+ "module": "Custom Ethika",
+ "name": "Ethika Custom",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Create Tax Scheme"
+  },
+  {
+   "step": "Create 80C Master"
+  },
+  {
+   "step": "Create Other Income Master"
+  },
+  {
+   "step": "Create Declaration Form"
+  }
+ ],
+ "subtitle": "Declaration Form, Tax Scheme and more.",
+ "success_message": "The Ethika Custom Module is all set up!",
+ "title": "Let's Set Up the Ethika Module. "
+}
