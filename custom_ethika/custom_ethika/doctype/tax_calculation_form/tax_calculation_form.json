@@ -1,0 +1,507 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-10-21 10:50:01.427384",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee_details_section",
+  "employee_id",
+  "gvv_column",
+  "name1",
+  "section_break_5",
+  "salary_as_per_provisions_contained_in_section",
+  "value_of_perquisites_under_section",
+  "profits_in_lieu_of_salary_under_section",
+  "column_break_4",
+  "total",
+  "reported_total_amount_of_salary_received_from_other_employer",
+  "fff_section",
+  "travel_concession_or_assistance",
+  "death_cum_retirement_gratuity",
+  "commuted_value_of_pension",
+  "cash_equivalent_of_leave_salary_encashment",
+  "house_rent_allowance",
+  "allowances_to_the_extent_exempt_under_section_10_column",
+  "total_amount_of_any_other_exemption_under_section_10",
+  "total_amount_of_exemption",
+  "section_break_24",
+  "total_amount_of_salary_received_from_current_employer",
+  "deductions_under_section_16_section",
+  "standard_deduction_under_section",
+  "entertainment_allowance_under_section",
+  "column_break_29",
+  "tax_on_employment_under_section",
+  "total_amount_of_deductions_under_section_16",
+  "section_break_32",
+  "income_chargeable_under_the_head",
+  "any_other_income_section",
+  "income_from_house_property",
+  "income_under_the_head_other_sources_offered_for_tds",
+  "column_break_37",
+  "total_amount_of_other_income_reported_by_the_employee",
+  "gggg_section",
+  "gross_total_income",
+  "tttt_section",
+  "table_12",
+  "total_80c",
+  "column_break_14",
+  "taxpayer_to_pension",
+  "total_deduction_under_section",
+  "deduction_section",
+  "deductions_in_respect_of_amount",
+  "deductible_amount",
+  "deduction_in_respect_of_contribution",
+  "deductible_amount_1",
+  "column_break_20",
+  "under_section_80d",
+  "deductible_amount_2",
+  "deduction_for_higher_education",
+  "deductible_amount_3",
+  "column_break_30",
+  "respect_of_donations",
+  "deductible_amount_4",
+  "respect_of_interest_on_deposits",
+  "deductible_amount_5",
+  "column_break_33",
+  "other_provision",
+  "table_31",
+  "other_total",
+  "section_break_39",
+  "aggregate_of_deductible",
+  "section_break_11",
+  "total_taxable_income",
+  "tax_on_total_income",
+  "rebate_under_section_87a_if_applicable",
+  "data_45",
+  "surcharge_wherever_applicable",
+  "health_and_education_cess",
+  "tax_payable",
+  "relief_under",
+  "net_tax_payable",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "salary_as_per_provisions_contained_in_section",
+   "fieldtype": "Currency",
+   "label": "(a) Salary as per provisions contained in section 17(1)"
+  },
+  {
+   "fieldname": "value_of_perquisites_under_section",
+   "fieldtype": "Currency",
+   "label": "(b) Value of perquisites under section 17(2) (as per Form No. 12BA, wherever applicable)"
+  },
+  {
+   "fieldname": "profits_in_lieu_of_salary_under_section",
+   "fieldtype": "Currency",
+   "label": "(c) Profits in lieu of salary under section 17(3) (as per Form No. 12BA, wherever applicable)"
+  },
+  {
+   "description": "(a + b + c)",
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "(d) Total"
+  },
+  {
+   "fieldname": "reported_total_amount_of_salary_received_from_other_employer",
+   "fieldtype": "Currency",
+   "label": "(e) Reported total amount of salary received from other employer"
+  },
+  {
+   "fieldname": "total_amount_of_any_other_exemption_under_section_10",
+   "fieldtype": "Currency",
+   "label": "(g) Total amount of any other exemption under section 10"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_taxable_income",
+   "fieldtype": "Currency",
+   "label": "Total taxable income"
+  },
+  {
+   "fieldname": "tax_on_total_income",
+   "fieldtype": "Currency",
+   "label": "Tax on total income"
+  },
+  {
+   "fieldname": "rebate_under_section_87a_if_applicable",
+   "fieldtype": "Currency",
+   "label": "Rebate under section 87A, if applicable"
+  },
+  {
+   "fieldname": "surcharge_wherever_applicable",
+   "fieldtype": "Currency",
+   "label": "Surcharge, wherever applicable"
+  },
+  {
+   "fieldname": "health_and_education_cess",
+   "fieldtype": "Currency",
+   "label": "Health and education cess"
+  },
+  {
+   "fieldname": "tax_payable",
+   "fieldtype": "Currency",
+   "label": "Tax payable"
+  },
+  {
+   "fieldname": "net_tax_payable",
+   "fieldtype": "Currency",
+   "label": "Net tax payable"
+  },
+  {
+   "fieldname": "table_12",
+   "fieldtype": "Table",
+   "label": "80C , 80CCC",
+   "options": "Tax Calculation Deduction 80C Item"
+  },
+  {
+   "fieldname": "tttt_section",
+   "fieldtype": "Section Break",
+   "label": "(10) Deduction under Chapter VI-A"
+  },
+  {
+   "fieldname": "total_80c",
+   "fieldtype": "Currency",
+   "label": "Total 80C , 80CCC"
+  },
+  {
+   "fieldname": "deduction_section",
+   "fieldtype": "Section Break",
+   "label": "Deduction U/S 80ccd (1B), 80CCD (2), 80D, 80E"
+  },
+  {
+   "description": "Gross Amount",
+   "fieldname": "deduction_for_higher_education",
+   "fieldtype": "Currency",
+   "label": "Interest on loan taken for higher education under section 80E"
+  },
+  {
+   "description": "Gross Amount",
+   "fieldname": "under_section_80d",
+   "fieldtype": "Currency",
+   "label": "Health insurance premia under section 80D"
+  },
+  {
+   "fieldname": "taxpayer_to_pension",
+   "fieldtype": "Currency",
+   "label": "Contribution by taxpayer to pension scheme under section 80CCD (1)"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_deduction_under_section",
+   "fieldtype": "Currency",
+   "label": "Total deduction under section 80C, 80CCC and 80CCD(1)"
+  },
+  {
+   "description": "(Gross Amount)",
+   "fieldname": "deductions_in_respect_of_amount",
+   "fieldtype": "Currency",
+   "label": "Amount paid/deposited to notified pension scheme under section 80CCD (1B)"
+  },
+  {
+   "description": "Gross Amount",
+   "fieldname": "deduction_in_respect_of_contribution",
+   "fieldtype": "Currency",
+   "label": "Contribution by Employer to pension scheme under section 80CCD (2)"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fff_section",
+   "fieldtype": "Section Break",
+   "label": "(2) Less:\u00a0Allowances to the extent exempt under section 10"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "allowances_to_the_extent_exempt_under_section_10_column",
+   "fieldtype": "Column Break",
+   "label": "(f) Allowances to the extent exempt under section 10"
+  },
+  {
+   "fieldname": "deductible_amount",
+   "fieldtype": "Currency",
+   "label": "Deductible Amount"
+  },
+  {
+   "fieldname": "deductible_amount_1",
+   "fieldtype": "Currency",
+   "label": "Deductible Amount"
+  },
+  {
+   "fieldname": "deductible_amount_2",
+   "fieldtype": "Currency",
+   "label": "Deductible Amount"
+  },
+  {
+   "fieldname": "deductible_amount_3",
+   "fieldtype": "Currency",
+   "label": "Deductible Amount"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Section Break",
+   "label": "Deduction U/S 80G, 8OTTA, Others"
+  },
+  {
+   "depends_on": "eval:doc.other_provision == \"1\"",
+   "fieldname": "table_31",
+   "fieldtype": "Table",
+   "options": "Other Provision Item"
+  },
+  {
+   "default": "0",
+   "fieldname": "other_provision",
+   "fieldtype": "Check",
+   "label": "Other Provision"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(Gross Amount)",
+   "fieldname": "respect_of_donations",
+   "fieldtype": "Currency",
+   "label": "Donations to certain funds, charitable institutions, etc. under section 80G"
+  },
+  {
+   "fieldname": "deductible_amount_4",
+   "fieldtype": "Currency",
+   "label": "Deductible Amount"
+  },
+  {
+   "description": "(Gross Amount)",
+   "fieldname": "respect_of_interest_on_deposits",
+   "fieldtype": "Currency",
+   "label": "Interest on deposits in savings account under section 80TTA"
+  },
+  {
+   "fieldname": "deductible_amount_5",
+   "fieldtype": "Currency",
+   "label": "Deductible Amount"
+  },
+  {
+   "depends_on": "eval:doc.other_provision == \"1\"",
+   "fieldname": "other_total",
+   "fieldtype": "Currency",
+   "label": "Under any other provision(s) of Chapter VI-A"
+  },
+  {
+   "fieldname": "section_break_39",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "aggregate_of_deductible",
+   "fieldtype": "Currency",
+   "label": "Aggregate of deductible amount under Chapter VI-A "
+  },
+  {
+   "fieldname": "data_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "relief_under",
+   "fieldtype": "Attach",
+   "label": "Less: Relief under section 89 (attach details)"
+  },
+  {
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee Id",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "(1) Gross Salary"
+  },
+  {
+   "fieldname": "travel_concession_or_assistance",
+   "fieldtype": "Currency",
+   "label": "(a)Travel concession or assistance under section 10(5)"
+  },
+  {
+   "fieldname": "death_cum_retirement_gratuity",
+   "fieldtype": "Currency",
+   "label": "(b) Death-cum-retirement gratuity under section 10(10)"
+  },
+  {
+   "fieldname": "commuted_value_of_pension",
+   "fieldtype": "Currency",
+   "label": "(c) Commuted value of pension under section 10(10A)"
+  },
+  {
+   "fieldname": "cash_equivalent_of_leave_salary_encashment",
+   "fieldtype": "Currency",
+   "label": "(d) Cash equivalent of leave salary encashment under section 10(10AA)"
+  },
+  {
+   "fieldname": "house_rent_allowance",
+   "fieldtype": "Currency",
+   "label": "(e) House rent allowance under section 10(13A)"
+  },
+  {
+   "description": "[2(a)+2(b)+2(c)+2(d)+2(e)+2(g)]",
+   "fieldname": "total_amount_of_exemption",
+   "fieldtype": "Currency",
+   "label": "(h)Total amount of exemption claimed under section 10"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "[1(d)-2(h)]",
+   "fieldname": "total_amount_of_salary_received_from_current_employer",
+   "fieldtype": "Currency",
+   "label": "(3) Total amount of salary received from current employer"
+  },
+  {
+   "fieldname": "deductions_under_section_16_section",
+   "fieldtype": "Section Break",
+   "label": "(4) Less: Deductions under section 16"
+  },
+  {
+   "fieldname": "standard_deduction_under_section",
+   "fieldtype": "Currency",
+   "label": "(a) Standard deduction under section 16(ia)"
+  },
+  {
+   "fieldname": "entertainment_allowance_under_section",
+   "fieldtype": "Currency",
+   "label": "(b) Entertainment allowance under section 16(ii) "
+  },
+  {
+   "fieldname": "tax_on_employment_under_section",
+   "fieldtype": "Currency",
+   "label": "(c) Tax on employment under section 16(iii)"
+  },
+  {
+   "description": "[4(a)+4(b)+4(c)]",
+   "fieldname": "total_amount_of_deductions_under_section_16",
+   "fieldtype": "Currency",
+   "label": "(5) Total amount of deductions under section 16"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "[(3+1(e)-5]",
+   "fieldname": "income_chargeable_under_the_head",
+   "fieldtype": "Currency",
+   "label": "(6) Income chargeable under the head \u201cSalaries\u201d"
+  },
+  {
+   "fieldname": "any_other_income_section",
+   "fieldtype": "Section Break",
+   "label": "(7) Add: Any other income reported by the employee under as per section 192 (2B)"
+  },
+  {
+   "fieldname": "income_from_house_property",
+   "fieldtype": "Currency",
+   "label": "(a) Income (or admissible loss) from house property reported by employee offered for TDS"
+  },
+  {
+   "fieldname": "income_under_the_head_other_sources_offered_for_tds",
+   "fieldtype": "Currency",
+   "label": "(b) Income under the head Other Sources offered for TDS"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "[7(a)+7(b)]",
+   "fieldname": "total_amount_of_other_income_reported_by_the_employee",
+   "fieldtype": "Currency",
+   "label": "(8) Total amount of other income reported by the employee"
+  },
+  {
+   "fieldname": "gggg_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tax Calculation Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "description": "(6 + 8)",
+   "fieldname": "gross_total_income",
+   "fieldtype": "Currency",
+   "label": "Gross total income"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "EIT-TAX-.###"
+  },
+  {
+   "fieldname": "gvv_column",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-10-22 12:22:50.388776",
+ "modified_by": "Administrator",
+ "module": "Custom Ethika",
+ "name": "Tax Calculation Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

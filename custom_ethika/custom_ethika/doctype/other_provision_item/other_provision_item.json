@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-10-21 12:54:42.647680",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "gross_amount",
+  "deductible_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "gross_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Gross Amount"
+  },
+  {
+   "fieldname": "deductible_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Deductible Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-10-21 12:54:42.647680",
+ "modified_by": "Administrator",
+ "module": "Custom Ethika",
+ "name": "Other Provision Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

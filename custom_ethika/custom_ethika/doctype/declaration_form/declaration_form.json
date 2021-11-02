@@ -628,10 +628,10 @@
    "label": "Is any insured persons age is more than 60Yrs ?"
   },
   {
-   "default": "<u>Income Tax Benefit on Interest on Loan for Purchase/ Construction/ Repair/ Renewal/ Reconstruction of a Residential House Property</u>\n\n(A) If a property is rented out, all the interest on a home loan can be claimed. <br>\n(B) If the property is vacant or self-occupied, a maximum of 2,00,000 can be claimed. <br>\n(C) maximum of \u20b930,000 can be claimed if <br>\ni) The loan is taken before 1 April 1999 (OR).<br>\nii) The purchase or construction is not completed within five years after the end of the financial year in which the loan was taken.",
+   "default": "Income Tax Benefit on Interest on Loan for Purchase/ Construction/ Repair/ Renewal/ Reconstruction of a Residential House Property\n\n(A) If a property is rented out, all the interest on a home loan can be claimed.\n(B) If the property is vacant or self-occupied, a maximum of 2,00,000 can be claimed.\n(C) maximum of \u20b930,000 can be claimed if\ni) The loan is taken before 1 April 1999 (OR).\nii) The purchase or construction is not completed within five years after the end of the financial year in which the loan was taken.",
    "depends_on": "eval:doc.do_you_have_a_housing_loan == \"Yes\"",
    "fieldname": "condition",
-   "fieldtype": "HTML Editor",
+   "fieldtype": "Long Text",
    "read_only": 1
   },
   {
@@ -649,7 +649,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-20 18:16:03.126325",
+ "modified": "2021-10-21 10:39:44.947877",
  "modified_by": "Administrator",
  "module": "Custom Ethika",
  "name": "Declaration Form",
